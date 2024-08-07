@@ -87,7 +87,7 @@
     <style>
         @font-face {
             font-family: Josefin Slab;
-            src: url('https://invitacionesdigitales.com.co/invitaciones/fonts/theme/46aYWdgz-1oFX11flmyEfS3USBnSvpkopQaUR-2r7iU.ttf');
+            src: url('../invitaciones/css/josefinslab.ttf');
         }
 
         .modal-audio {
@@ -262,13 +262,7 @@
 
 <body data-pais="Colombia" id="invitacion" class="body-offcanvas" data-category="Otro" style="background: #f9f9f9;"
     data-idpase="2629" data-slug="boda-santiagoynatalia">
-    <!-- <div class="blackclover"></div>
-    <div class="blackclover2"></div> -->
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSX3KSM" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
+    
 
     <!--PRELOADER-->
     <div id="preloader22">
@@ -630,7 +624,41 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h4 class="modal-title">
-                            <div align="center"> Ceremonia & Recepción </div>
+                            <div align="center">Ceremonia</div>
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="maps">
+                            <!-- Tomsom - Mapa por coordenadas -->
+                            <iframe class="mapa-pop"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9515020185813!2d-74.10919668899791!3d4.602708142479075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f993955d1e1df%3A0x9fb997b20be99e25!2sParroquia%20San%20Lucas!5e0!3m2!1ses-419!2sco!4v1723057565627!5m2!1ses-419!2sco" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                        </div>
+                        <h3 class="wed-text">
+                            <div align="center">Parroquia San Lucas</div>
+                        </h3>
+
+                        <div class="wed-text">Cuándo: 30 de noviembre de 2024 04:00 Pm</div>
+                        <div class="wed-text">Dirección: Cra. 32b #1D-36, Bogotá</div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn letraSecundaria btn-default"
+                            data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="mapa2" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content" style="z-index:999;">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">
+                            <div align="center">Recepción </div>
                         </h4>
                     </div>
                     <div class="modal-body">
@@ -644,7 +672,6 @@
                             <div align="center">Banquetes y Recepciones Casa Imperial</div>
                         </h3>
 
-                        <div class="wed-text">Cuándo: 30 de noviembre de 2024 17:00 hrs. </div>
                         <div class="wed-text">Dirección: Av. Cra 30 #1B-18 </div>
                     </div>
                     <div class="modal-footer">
@@ -678,7 +705,7 @@
                             <!-- GOOGLE MAP LINK -->
 
                             <!--IMAGE-->
-                            <img src="../invitaciones/admin/imagenes/24405/CEREMONIA1-IMGceryrec.jpg" alt="480x320"
+                            <img src="../invitaciones/admin/imagenes/24405/CeremoniayRecepcion.png" alt="480x320"
                                 class="img-responsive center-block fl-wd">
                             <!-- SUBHEADER-->
                             <h3 class="wed-text letraSecundaria">
@@ -686,13 +713,19 @@
                             </h3>
 
                             <!-- Tomsom - Donde y cuando independiente -->
-                            <div class="wed-text"><b>Cuándo: </b> 30 de noviembre de 2024 17:00 hrs. </div>
-                            <div class="wed-text"><b>Dirección:</b>  Av. Cra 30 #1B-18  </div>
-
+                            <div class="wed-text"><b>Dirección: </b> Cra. 32b #1D-36, Bogotá </div>
                             <div type="button" class="btn-map" data-toggle="modal" data-target="#mapa1">Ver mapa</div>
+                            <div class="wed-text"><b>Cuándo: </b> 30 de noviembre de 2024 04:00 Pm</div>
+                                 <h3 class="wed-text letraSecundaria">
+                                <div align="center">Recepción</div>
+                            </h3>
+
+                            <div class="wed-text"><b>Dirección:</b>  Av. Cra 30 #1B-18 Bogotá</div>
+
+                            <div type="button" class="btn-map" data-toggle="modal" data-target="#mapa2">Ver mapa</div>
 
                             <div title="Agendar en el calendario" class="addeventatc" data-styling="none">
-                                Agendar en el calendario <span class="start">30-11-2024 17:00:00</span>
+                                Agendar en el calendario <span class="start">30-11-2024 16:00:00</span>
                                 <span class="end">30-11-2024 17:00:00 </span>
                                 <span class="timezone">America/Bogota</span>
                                 <span class="title">
@@ -1109,7 +1142,7 @@
     <!-- FOOTER -->
     <div class="container containerCustom px-0">
         <footer id="footer" class="footer-background-cover"
-            style="background-image: url('../invitaciones/admin/imagenes/24405/IMAGEN-FOOTERIMAGEN-FOOTERfinnuevaok.jpg'); height: 85vh; display: flex; justify-content: center; align-items: flex-end;">
+            style="background-image: url('../invitaciones/admin/imagenes/24405/FooterDef.jpg'); height: 85vh; display: flex; justify-content: center; align-items: flex-end;">
             <div class="container containerCustom"
                 style="display: flex; justify-content: center; align-items: flex-end;">
                 <div class="row">

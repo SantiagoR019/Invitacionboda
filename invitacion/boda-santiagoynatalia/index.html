@@ -370,9 +370,11 @@
         <div class="row">
             <div class="col-12 text-center">
                 <h2 class="headline letraPrincipal" style="font-size: 35px !important;"> Invitación válida para: </h2>
-                <h2 class="headline letraPrincipal" style="margin-top: 3%; font-size: 40px !important;" id="asistentes">Leonor Palacio
+                <h2 class="headline letraPrincipal" style="margin-top: 3%; font-size: 40px !important;" id="asistentes">
+                    Santiago y Natalia
                 </h2>
-                <h1 class="margin letraSecundaria" style="font-size: 32px !important;">Hemos reservado un espacio en tu honor</h1>
+                <h1 class="margin letraSecundaria" style="font-size: 32px !important;">Hemos reservado un espacio en tu
+                    honor</h1>
             </div>
         </div>
     </section>
@@ -432,14 +434,8 @@
                             style="display: flex; align-items: center; justify-content: flex-start;">
                             <label for="cantidadPersonas" class="col-md-6 float-left px-0 m-0">Personas que asistirán:
                             </label>
-
-                            <select class="form-control  col-md-6" id="cantidadPersonasPass"
+                            <input type="text" class="form-control  col-md-6" id="cantidadPersonasPass"
                                 style="    height: 46px;max-width:70px">
-                                <option value="0" style="display:none;">0</option>
-                                <option value='1'>1</option>
-                                <option value='2'>2</option>
-                            </select>
-
                         </div>
                         <div class="form-group col-12 float-left">
                             <h4 id="mensajeCancelacion"
@@ -1510,8 +1506,16 @@
                 $('#div_reconfirmar').show();
                 $('#modalAceptar').modal('hide');
                 $("#confirmar-invi").text(texto_btn);
+                let mensaje = $('#mensajePass').val();
+                enviarMensajeWhatsapp(mensaje);
             }, 4000);
         });
+
+        function enviarMensajeWhatsapp(mensaje) {
+            let telefono = '3158824024'; // Reemplazar con el número de teléfono al que se enviará el mensaje
+            let url = `https://api.whatsapp.com/send?phone=${telefono}&text=${encodeURIComponent(mensaje)}`;
+            window.open(url, '_blank');
+        }
 
         function formatDate(date) {
             var d = new Date(date),
@@ -1526,22 +1530,22 @@
 
             return [day, month, year];
         }
-        
-        
-        </script>
-        <script>
-            window.onload = function() {
-                
-                let nombres = [{ id: 1, nombre: 'Leonor Palacio' }, { id: 2, nombre: 'Carlos Pulido y Yaneth Orjuela' }, { id: 3, nombre: 'Angela Pulido e Hijos' }];
-                let url = new URL(window.location.href);
-                let id = url.searchParams.get("id");
-                //ajusta el if para que busque el id en el array nombres
-                if(nombres.find(x => x.id == id)){
-                    $('#asistentes').text(nombres.find(x => x.id == id).nombre);
-                }
-                
+
+
+    </script>
+    <script>
+        window.onload = function () {
+
+            let nombres = [{ id: 1, nombre: 'Leonor Palacio' }, { id: 2, nombre: 'Carlos Pulido y Yaneth Orjuela' }, { id: 3, nombre: 'Angela Pulido e Hijos' }];
+            let url = new URL(window.location.href);
+            let id = url.searchParams.get("id");
+            //ajusta el if para que busque el id en el array nombres
+            if (nombres.find(x => x.id == id)) {
+                $('#asistentes').text(nombres.find(x => x.id == id).nombre);
             }
-        </script>
+
+        }
+    </script>
 
 </body>
 

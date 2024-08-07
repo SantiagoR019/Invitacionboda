@@ -44,6 +44,8 @@
     <!-- Main-StyleSheet include -->
     <link rel="stylesheet" href="../invitaciones/css/trivia/stylec66d.css?ver=12">
     <link rel="stylesheet" href="../invitaciones/css/trivia/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <!-- FaviIcon 
 		<link rel="apple-touch-icon" sizes="57x57" href="/invitaciones/fav/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="/invitaciones/fav/apple-icon-60x60.png">
@@ -262,7 +264,7 @@
 
 <body data-pais="Colombia" id="invitacion" class="body-offcanvas" data-category="Otro" style="background: #f9f9f9;"
     data-idpase="2629" data-slug="boda-santiagoynatalia">
-    
+
 
     <!--PRELOADER-->
     <div id="preloader22">
@@ -362,151 +364,47 @@
         }
     </style>
 
+    <section id="countdown" class="variables container containerCustom"
+        style="background-image:url('../invitaciones/admin/imagenes/24405/IMAGEN-VARIABLESfr.jpg'); color: #333333 !important;">
 
-
-    <section class="container container-ticket">
-        <div id="seccionQRImp">
-            <div id="invitamePass" style="text-align:center; background-color: #fff;">
-                <h1 style="font-family: 'Roboto';
-                                font-weight: 500;
-                                padding-bottom: 10px;">Invitación válida para:</h1>
-
-                <div class="row ">
-                    <!-- <h3 class="col-12 col-12 text-center"> - Nuestra Boda -</h3> -->
-
-
-
-                    <!-- <div class="col-md-4 col-6 p-0 p-md-5">
-                        <div id="qrcode" class="px-0 mx-0 p-md-5"></div>
-                    </div> -->
-                    <div class="col-md-8 col-6" >
-                        <div class="datagroup col-12">
-                            <label>NOMBRE</label>
-                            <div>
-                                Leonor Palacio </div>
-                        </div>
-                        <div class="datagroup col-12">
-                            <div class="row mx-0">
-                                <div class="col-6 float-left px-0">
-                                    <label>PERSONAS</label>
-                                    <div>
-                                        1 </div>
-                                </div>
-                                <div class="col-6 float-left px-0">
-                                    <label>MESA</label>
-                                    <div>
-                                        1 </div>
-                                </div>
-                            </div>
-
-                            <div class="d-md-block d-none">
-
-
-
-                                <div class="datagroup">
-                                    <label>ESTADO DEL PASE</label>
-                                    <div>
-                                        Habilitado </div>
-                                </div>
-
-                                <div class="datagroup">
-                                    <label>MENSAJE</label>
-                                    <div>
-                                        Los esperamos!!! </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <!-- <div id="paseDatos" class="collapse ">
-                            
-                                <div class="datagroup col-12">
-                                    <div class="row mx-0">
-                                                                                                                    </div>
-                                </div>
-
-                                <div class="datagroup col-12">
-                                                                            <label>ESTADO DEL PASE</label>
-                                        <div>
-                                            Habilitado                                        </div>
-                                                                    </div>
-                                                                    <div class="datagroup col-12">
-                                        <label>MENSAJE</label>
-                                        <div>
-                                            Los esperamos!!!                                        </div>
-                                    </div>
-                                                                <div id="descargarPDFDiv" class="col-12" style="display: block">
-                                    <div class="btn-pdf hidden" id="descargarPDF"><img src="/invitaciones/images/pdfDownload.png" alt="Descargar PDF"></div>
-                                </div>
-                            </div> -->
-                    </div>
-
-                    <a class="btn btn-informacion d-block d-md-none" data-toggle="collapse" href="#paseDatos"
-                        role="button" id="btn-masinnfo">Mas información</a>
-
-                    <section class="contenedor pb-0 mb-3 collapse" id="paseDatos">
-                        <div class="container">
-                            <div class="row">
-
-
-
-                                <div class="datagroup">
-                                    <label>ESTADO DEL PASE</label>
-                                    <div>
-                                        Habilitado </div>
-                                </div>
-
-                                <div class="datagroup">
-                                    <label>MENSAJE</label>
-                                    <div>
-                                        Los esperamos!!! </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </section>
-
-                    <!--<div id="qrinfo" class="">-->
-
-
-
-
-
-
-                    <!-- </div> -->
-                </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="headline letraPrincipal" style="font-size: 35px !important;"> Invitación válida para: </h2>
+                <h2 class="headline letraPrincipal" style="margin-top: 3%; font-size: 40px !important;" id="asistentes">Leonor Palacio
+                </h2>
+                <h1 class="margin letraSecundaria" style="font-size: 32px !important;">Hemos reservado un espacio en tu honor</h1>
             </div>
         </div>
     </section>
-    <section>
-        <div class="container container-ticket ">
-            <div class="col-12 mt-3"
+    <div class="container container-ticket ">
+        <div class="col-12 mt-3"
+            style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <div class="frasesMax letraSecundaria" style="color: black;">
+                <br> Favor de confirmar tu presencia, a más tardar un mes antes del evento.<br><br>¡Muchas Gracias!
+            </div>
+            <h5>30 de noviembre de 2024 04:00 Pm.<br> Bogotá D.C</h5>
+
+            <div class="col-12 my-5" id="div_reconfirmar"
                 style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                <h3 class="mt-0">Confirmar Asistencia</h3>
-                <h4>¡Te espero!</h4>
-                <h5>30 de noviembre de 2024 04:00 Pm.<br> Bogotá D.C</h5>
+                <h4 class="text-center">Confirmaste que <span id="text-confirm-valor" style="color: red"><b>no
+                            asistiras</b></span> el <span id="text-confirm-fecha">05/08/2024</span></h4>
+                <h5 style="display: none;" id="txt-cant">Personas confirmadas: <span
+                        id="text-confirm-cant"><b>0</b></span></h5>
+                <button class="btn btn-primary mt-5" data-toggle="" id="reconfirmar">
+                    Modificar confirmación
+                </button>
+            </div>
 
-                <div class="col-12 my-5" id="div_reconfirmar"
-                    style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                    <h4 class="text-center">Confirmaste que <span id="text-confirm-valor" style="color: red"><b>no
-                                asistiras</b></span> el <span id="text-confirm-fecha">05/08/2024</span></h4>
-                    <h5 style="display: none;" id="txt-cant">Personas confirmadas: <span
-                            id="text-confirm-cant"><b>0</b></span></h5>
-                    <button class="btn btn-primary mt-5" data-toggle="" id="reconfirmar">
-                        Modificar confirmación
-                    </button>
-                </div>
-
-                <div class="col-12 mt-3" id="divConfirmacion" style="display: none; justify-content: center;">
-                    <button class="btn btn-primary" data-toggle="modal" id="btnAceptar">
-                        Aceptar
-                    </button>
-                    <button class="btn btn-danger" data-toggle="modal" id="btnRechazar" style="margin-left: 15px;">
-                        Rechazar
-                    </button>
-                </div>
+            <div class="col-12 mt-3" id="divConfirmacion" style="display: none; justify-content: center;">
+                <button class="btn btn-primary" data-toggle="modal" id="btnAceptar">
+                    Aceptar
+                </button>
+                <button class="btn btn-danger" data-toggle="modal" id="btnRechazar" style="margin-left: 15px;">
+                    Rechazar
+                </button>
             </div>
         </div>
+    </div>
     </section>
 
     <!-- Modal para confirmar nuevo pase -->
@@ -631,8 +529,9 @@
                         <div class="maps">
                             <!-- Tomsom - Mapa por coordenadas -->
                             <iframe class="mapa-pop"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9515020185813!2d-74.10919668899791!3d4.602708142479075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f993955d1e1df%3A0x9fb997b20be99e25!2sParroquia%20San%20Lucas!5e0!3m2!1ses-419!2sco!4v1723057565627!5m2!1ses-419!2sco" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                                height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9515020185813!2d-74.10919668899791!3d4.602708142479075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f993955d1e1df%3A0x9fb997b20be99e25!2sParroquia%20San%20Lucas!5e0!3m2!1ses-419!2sco!4v1723057565627!5m2!1ses-419!2sco"
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade" height="300" frameborder="0"
+                                style="border:0" allowfullscreen=""></iframe>
                         </div>
                         <h3 class="wed-text">
                             <div align="center">Parroquia San Lucas</div>
@@ -665,8 +564,9 @@
                         <div class="maps">
                             <!-- Tomsom - Mapa por coordenadas -->
                             <iframe class="mapa-pop"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11248.540327351786!2d-74.12150380003348!3d4.601307872211534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f993c8d2ddc83%3A0xf465e7c700ba9f15!2sBanquetes%20y%20Recepciones%20Casa%20Imperial!5e0!3m2!1ses-419!2sco!4v1722899299965!5m2!1ses-419!2sco" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                                height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11248.540327351786!2d-74.12150380003348!3d4.601307872211534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f993c8d2ddc83%3A0xf465e7c700ba9f15!2sBanquetes%20y%20Recepciones%20Casa%20Imperial!5e0!3m2!1ses-419!2sco!4v1722899299965!5m2!1ses-419!2sco"
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade" height="300" frameborder="0"
+                                style="border:0" allowfullscreen=""></iframe>
                         </div>
                         <h3 class="wed-text">
                             <div align="center">Banquetes y Recepciones Casa Imperial</div>
@@ -716,11 +616,11 @@
                             <div class="wed-text"><b>Dirección: </b> Cra. 32b #1D-36, Bogotá </div>
                             <div type="button" class="btn-map" data-toggle="modal" data-target="#mapa1">Ver mapa</div>
                             <div class="wed-text"><b>Cuándo: </b> 30 de noviembre de 2024 04:00 Pm</div>
-                                 <h3 class="wed-text letraSecundaria">
+                            <h3 class="wed-text letraSecundaria">
                                 <div align="center">Recepción</div>
                             </h3>
 
-                            <div class="wed-text"><b>Dirección:</b>  Av. Cra 30 #1B-18 Bogotá</div>
+                            <div class="wed-text"><b>Dirección:</b> Av. Cra 30 #1B-18 Bogotá</div>
 
                             <div type="button" class="btn-map" data-toggle="modal" data-target="#mapa2">Ver mapa</div>
 
@@ -772,11 +672,11 @@
                         }
                     </style>
                 </h2>
-                <img src="../invitaciones/admin/imagenes/24405/DRESSCODE-IMGdcplaya.jpg" alt="480x320"
+                <img src="../invitaciones/admin/imagenes/24405/Dresscode.jpg" alt="480x320"
                     class="img-responsive center-block img-headline-v2">
                 <h3 class="wed-text letraSecundaria"
                     style="font-weight: 100;font-size: 16px; color: #101010 !important;">
-                    <div style="font-size:18px;">Ellas: Vestido formal <br> Ellos: Vestido formal
+                    <div style="font-size:24px;">Formal
                         <br><i>Reserva de colores: Blanco, y azul</i>
                         <hr />
                     </div>
@@ -810,8 +710,8 @@
                     style="background-image:url('../invitaciones/admin/imagenes/24405/Foto4.jpg');"> </li>
                 <li class="homesliderimage"
                     style="background-image:url('../invitaciones/admin/imagenes/24405/Foto5.jpg');"> </li>
-                <li class="homesliderimage"
-                    style="background-image:url('../invitaciones/admin/imagenes/24405/FOTOSFOTOS6.jpg');"> </li>
+                <!-- <li class="homesliderimage"
+                    style="background-image:url('../invitaciones/admin/imagenes/24405/FOTOSFOTOS6.jpg');"> </li> -->
             </ul>
             <!-- END SLIDER IMAGES -->
         </div>
@@ -1058,17 +958,6 @@
         </div>
 
     </section>
-    <!-- END VIDEO SECTION -->
-
-
-    <!--  LINK SECTION -->
-    <!-- END LINK SECTION -->
-
-
-    <!-- CONFIRMAR SECTION -->
-    <!-- END CONFIRMAR SECTION -->
-
-    <!-- CONTACTO SECTION -->
     <section id="reserve-image-background" class="container containerCustom footer-background-cover1"
         style="background: #cbb6b6">
 
@@ -1097,13 +986,13 @@
                 <a target="_blank"
                     href="https://api.whatsapp.com/send/?phone=573206753461&amp;text=Confirmo%20asistencia%20a%20la%20Boda%20de%20Santiago y%20Natalia">
                     <div class="wspBoton letraSecundaria  aa">
-                        <i class="fa fa-whatsapp" aria-hidden="true"> Confirmar a la Novia</i>
+                        <i class="fa fa-whatsapp" aria-hidden="true" style="font-size: 16px;"> Confirmar a Natalia</i>
                     </div>
                 </a>
                 <a target="_blank"
                     href="https://api.whatsapp.com/send/?phone=573158824024&amp;text=Confirmo%20asistencia%20a%20la%20Boda%20de%20Santiago y%20Natalia">
                     <div class="wspBoton letraSecundaria  aa">
-                        <i class="fa fa-whatsapp" aria-hidden="true"> Confirmar al Novio</i>
+                        <i class="fa fa-whatsapp" aria-hidden="true" style="font-size: 16px;"> Confirmar a Santiago</i>
                     </div>
                 </a>
             </div>
@@ -1116,29 +1005,12 @@
     <!-- SECCION GENERICA -->
     <div class="container containerCustom" style="background-color: #f9f9f9">
         <section id="gift-registry" class="onepage">
-
-            <!-- GIFT HEADER WRAPPER -->
             <div class="text-center">
-                <!-- TITLE -->
-                <h2 class="headline letraPrincipal" style="color: #101010;">Hecho con mucho amor por<br>Bodas y Novias
+                <h2 class="headline letraPrincipal" style="color: #101010;">Los esperamos!
                 </h2>
-                <!-- TEXT INFO -->
-
             </div>
-            <!-- END GIFT HEADER WRAPPER -->
-
-           
         </section>
-
-      
     </div>
-    <!-- END GIFT REGISTRY CONTENT SECTION -->
-
-
-
-
-
-
     <!-- FOOTER -->
     <div class="container containerCustom px-0">
         <footer id="footer" class="footer-background-cover"
@@ -1174,17 +1046,9 @@
 
         </footer>
     </div>
-    <!-- Tomsom - sacar pie de página -->
-
-    <!-- Tomsom - MUSICA -->
-
-
-
 
     <audio id="musica" loop>
-        <source
-            src="../invitaciones/images/cancion.mp3"
-            type="audio/mp3">
+        <source src="../invitaciones/images/cancion.mp3" type="audio/mp3">
     </audio>
 
     <div class="musicaOff letraSecundaria" target="_blank" id="sonidomusicaOff" style="cursor: pointer;">
@@ -1194,8 +1058,6 @@
     <div class="musicaOn" target="_blank" id="sonidoMusicaOn" style="cursor: pointer;">
         <img src="../invitaciones/images/musica-on-4.gif">
     </div>
-
-
 
     <!-- Tomsom - MODAL BIENVENIDA -->
     <button type="button" class="btn letraSecundaria btn-danger hidden" data-toggle="modal"
@@ -1417,7 +1279,7 @@
             return fileName;
         }
 
-        document.getElementById("descargarPDF").addEventListener("click", function() {
+        document.getElementById("descargarPDF").addEventListener("click", function () {
             // Oculta el botón "Descargar PDF"
             document.getElementById("descargarPDFDiv").style.display = "none";
             document.getElementById("btn-masinnfo").style.display = "none";
@@ -1662,17 +1524,26 @@
             if (month.length < 2)
                 month = '0' + month;
 
-            return [day, month, year].join('https://invitacionesdigitales.com.co/');
+            return [day, month, year];
         }
-    </script>
-
-    <!-- WHATSAPP -->
-
-
+        
+        
+        </script>
+        <script>
+            window.onload = function() {
+                
+                let nombres = [{ id: 1, nombre: 'Leonor Palacio' }, { id: 2, nombre: 'Carlos Pulido y Yaneth Orjuela' }, { id: 3, nombre: 'Angela Pulido e Hijos' }];
+                let url = new URL(window.location.href);
+                let id = url.searchParams.get("id");
+                //ajusta el if para que busque el id en el array nombres
+                if(nombres.find(x => x.id == id)){
+                    $('#asistentes').text(nombres.find(x => x.id == id).nombre);
+                }
+                
+            }
+        </script>
 
 </body>
 
-
-<!-- Mirrored from invitacionesdigitales.com.co/boda-juanfelipeyanamaria/36c09ca6 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 Aug 2024 22:23:11 GMT -->
 
 </html>

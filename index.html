@@ -431,8 +431,9 @@
                             style="text-shadow: 0 1px 2px rgba(0,0,0,0.6);">
                             <div
                                 style="text-shadow: 1px 1px 6px rgba(0,0,0,0.9), 4px 4px 6px rgba(0,0,0,0.5), 8px 8px 11px rgba(0,0,0,0.75), 22px 22px 20px rgba(0,0,0,0.4), -2px -2px 5px rgba(0,0,0,0.2), 2px 2px 5px rgba(0,0,0,0.2);">
-                                Eres la respuesta a todas mis plegarias: eres una canción, un sueño, un susurro; no sé
-                                cómo he podido vivir sin ti todos estos años.</div>
+                                Cuando
+                                te das cuenta de que quieres pasar el resto de tu vida con alguien, deseas que el resto
+                                de tu vida empiece lo antes posible.</div>
                             <br><br><br><br><br><br><br><br><br><br><br><br>
                         </h1>
                     </div>
@@ -1320,6 +1321,59 @@
             }
 
         }
+        //escribe una funcion que reciba un array de ids de invitados y reemplace el body por el html de invitadosExcluidos si el id no esta en el array de ids de invitados carga la pagina normal
+
+
+        const invitadosExcluidos = () => {
+            const html_ = `<div style=" height: 100vh; width: 100vw;">
+            <div  style=" height: 100vh; width: 100vw;background-image: url('/resources/imgs/imgPareja.jpg'); background-repeat: round;">
+            <section id="countdown" class="variables container containerCustom" style="background-image:url('/resources/imgs/IMAGEN-VARIABLESfr.jpg'); color: #333333 !important;">
+                <form method="post" class="login100-form validate-form flex-sb flex-w flex-col text-center" autocomplete="off">
+
+                <h1 class="fs-25">Ingreso para personal</h1>
+                <h2 style="margin-bottom: 70px;margin-top: 20px;">Evento: Boda Santiago y Natalia</h2>
+                <div class="p-t-13 p-b-9">
+                <span class="txt1">
+                Ingrese el código de acceso
+                </span>
+                </div>
+                <div class="wrap-input100 validate-input" data-validate="Ingresar contraseña">
+                <input class="input100" type="text" name="pass" id="pass">
+                <span class="focus-input100"></span>
+                <input id="return" name="return" type="hidden">
+                </div>
+                <div class="container-login100-form-btn m-t-17">
+                <button type="submit" id="boton" name="boton" class="login100-form-btn">
+                Continuar
+                </button>
+                </div>
+                </form>
+            </div>
+            </section>
+            </div>`;
+            $('body').html(html_);
+        }
+        ///ahora escribe una funcion que tome el value de pass y lo compare con el id de la url si son iguales carga la pagina normal si no carga la pagina de invitadosExcluidos
+        $(document).ready(function () {
+            $('#boton').on('click', function (e) {
+                e.preventDefault();
+                const pass = $('#pass').val();
+                const url = new URL(window.location.href);
+                const id = url.searchParams.get("id");
+                if (pass == id) {
+                    window.location.href = window.location.href;
+                } else {
+                    invitadosExcluidos();
+                }
+            });
+            const idsExcluidos = [34, 38];
+            const url = new URL(window.location.href);
+            const id = url.searchParams.get("id");
+            if (idsExcluidos.includes(parseInt(id))) {
+                invitadosExcluidos();
+            }
+        });
+
     </script>
 
 </body>

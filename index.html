@@ -1326,8 +1326,6 @@
             }
 
         }
-        //escribe una funcion que reciba un array de ids de invitados y reemplace el body por el html de invitadosExcluidos si el id no esta en el array de ids de invitados carga la pagina normal
-
 
         const invitadosExcluidos = () => {
             const html_ = `
@@ -1359,7 +1357,7 @@
         $(document).ready(function () {
             const url = new URL(window.location.href);
             const id = url.searchParams.get("id");
-            const idsExcluidos = [34, 38];
+            const idsExcluidos = [34, 38, 56, 62, 57, 28, 21, 22, 30];
             const claveGuardada = sessionStorage.getItem("claveCorrecta");
 
             // Verificar si la clave ya ha sido verificada anteriormente

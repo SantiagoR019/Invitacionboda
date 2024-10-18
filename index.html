@@ -1362,7 +1362,7 @@
         $(document).ready(function () {
             const url = new URL(window.location.href);
             const id = url.searchParams.get("id");
-            const idsExcluidos = [34, 38, 56, 62, 57, 28, 21, 22, 30];
+            const idsExcluidos = [34, 38, 56, 62, 21, 30];
             const claveGuardada = sessionStorage.getItem("claveCorrecta");
 
             // Verificar si la clave ya ha sido verificada anteriormente
